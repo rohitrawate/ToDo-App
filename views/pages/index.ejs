@@ -1,22 +1,12 @@
 <%- include('../partials/head.ejs') %>
 <body>
-    <style>
-        div.addedtask.completetsk {
-            text-align: center ;
-        }
-        ul.myOL {
-            display: inline-block;
-            text-align: left;
-        }
-    </style>
-
 <center>
-   <h1 style="display: cen;">Hi,  <%= obj.firstName %> <%= obj.lastName %></h1> 
+   <h1 >Task Manager  <span><%= obj.firstName %> <%= obj.lastName %> </span></h1> 
 
   <div class="container">
         <h2> A Simple ToDo List App </h2>
         <form action ="/addtask" method="POST">
-            <input class="addtaskin" type="text" name="newtask" placeholder="add new task"  />   <button class="addtask"> Add Task </button>
+            <input class="addtaskin" type="text" name="newtask" placeholder="add new task"  /> <button class="addtask"> Add Task </button>
     <div class="addedtask"> 
         <h2> Added Task </h2>
         <ul class="myOL"> 
@@ -27,7 +17,7 @@
         </ul>
         <br>
         <button class="remove"  formaction="/removetask" type="submit"> Remove </button>
-    <!-- </div>     -->
+    </div>    
         </form>
         <h2> Completed task </h2>
         <ul class="myOL">

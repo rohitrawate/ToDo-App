@@ -1,12 +1,12 @@
 
 const express = require('express');   //require the just installed express app
 var bodyParser = require("body-parser");
-
+var path = require('path');
 const app = express(); //then we call express
 const port = 3000;
 
-app.use(express.static("public" ) );
 app.use( bodyParser.urlencoded( { extended: true} ));
+app.use(express.static(path.join(__dirname, 'public')) );
 // app.use(bodyParser.json());
 
 app.set('view engine', 'ejs');    // set up the template engine 
@@ -45,7 +45,7 @@ app.post('/addtask', function( req, res ) {   console.log( 'Post /addtask called
 
 //   -*-*-*-*-*-  Completed Task -*-*-*-*-*- $$$$$$$$$$$$%%%%%%%%%%%%
 // var complete = ["finish jquery"];      // completed task array with initial placeholders for removed task
-var complete = ["Spring Login Project"];
+var complete = ["Spring Login Project", "ToDo Project"];
 
 app.post( "/removetask", function(req, res) {
   console.log("/removetask called : ");
