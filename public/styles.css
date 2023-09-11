@@ -13,35 +13,48 @@ body {
     background-color:  rgb(233, 232, 232);
  }
  
-button.add{
-    background-color: #77d77a;
-}
+
 button.remove {
-    background-color: #ee4f5a;
+    background-color: #f22836;
     margin-top: 10px;
     margin-bottom: 20px;
+    box-shadow: 2px 2px 5px rgba(89, 226, 31, 0.9);
+
 }
+
+button.addtask:hover {background-color: #1daefc;}
+button.remove:hover {background-color: #f22836;}
+
 button {
     display: inline-block;
     padding: 8px 10px;
-    font-size: 14px;
-    cursor: pointer;
+    font-size: 15px;
+    /* cursor: pointer; */
     text-align: center;
     text-decoration: none;
-    outline: none;
+    /* outline: none; */
     color: #fff;  /* text color*/
     border: none;
     border-radius: 12px;
-    box-shadow: 0 5px #999;
+    /* box-shadow: 0 5px #999; */
+    /* transition: 0.3s ; */
 }
 
-.button:hover {background-color: #dce6dc}
+/* button:active {
+    
+    transform: scale(0.98);
+    font-size: 12px;
+    box-shadow: 0px 2px rgba(70, 246, 58, 0.24);
+}  */
 
-.button.addtask:active {
-    background-color: #34b4e3;
-    box-shadow: 0 5px #666;
-    transform: translateY(8px);
-}
+/* button.addtask:active {
+    color: #fff;
+    box-shadow: 0 2px #f5f1f1;
+    font-size: 12px;
+    padding: 8px 10px;
+    transform: small translateY(-8px);
+} */
+
 input.addtaskin {
     width: 250px;
     height: 40px;
@@ -66,7 +79,10 @@ h1 {
 }
 
 .addtask{
-    background-color: rgb(133, 221, 89);
+    /* background-color: rgb(135, 249, 78); */
+    background-color: rgb(19, 188, 19);
+    /* box-shadow: 2px 2px 5px rgba(89, 226, 31, 0.9); */
+    box-shadow: 2px 3px 5px rgba(105, 253, 76, 0.9);
     
  }
  div.addedtask{
