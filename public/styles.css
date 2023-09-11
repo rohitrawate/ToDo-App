@@ -19,7 +19,6 @@ button.remove {
     margin-top: 10px;
     margin-bottom: 20px;
     box-shadow: 2px 2px 5px rgba(89, 226, 31, 0.9);
-
 }
 
 button.addtask:hover {background-color: #1daefc;}
